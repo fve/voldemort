@@ -28,7 +28,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import org.apache.log4j.Logger;
 
-import voldemort.TestUtils;
 import voldemort.VoldemortException;
 import voldemort.client.StoreClient;
 import voldemort.performance.benchmark.generator.CounterGenerator;
@@ -255,7 +254,7 @@ public class Workload {
     private DiscreteGenerator transformsChooser;
     private KeyProvider<?> warmUpKeyProvider;
     private KeyProvider<?> keyProvider;
-    private String value;
+    private byte[] value;
     private ArrayList<Versioned<Object>> sampleValues;
     private Random randomSampler;
     private int sampleSize;
@@ -270,7 +269,7 @@ public class Workload {
         int deletePercent = props.getInt(Benchmark.DELETES, 0);
         int mixedPercent = props.getInt(Benchmark.MIXED, 0);
         int valueSize = props.getInt(Benchmark.VALUE_SIZE, 1024);
-        this.value = new String(TestUtils.randomBytes(valueSize));
+        this.value = new byte[valueSize];
         this.sampleSize = props.getInt(Benchmark.SAMPLE_SIZE, 0);
         int cachedPercent = props.getInt(Benchmark.PERCENT_CACHED, 0);
         String keyType = props.getString(Benchmark.KEY_TYPE, Benchmark.STRING_KEY_TYPE);
@@ -394,7 +393,7 @@ public class Workload {
     public boolean doWrite(VoldemortWrapper db, WorkloadPlugin plugin) {
         Object key = warmUpKeyProvider.next();
         if(plugin != null) {
-            return plugin.doWrite(key, this.value);
+            return plugin.doWrite(key, new String(this.value));
         }
         db.write(key, this.value, null);
         return true;

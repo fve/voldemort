@@ -12,10 +12,11 @@ import voldemort.store.StoreDefinition;
  */
 public class RoutingStrategyFactory {
 
-    public RoutingStrategyFactory() {}
+    public RoutingStrategyFactory() {
+    }
 
     public RoutingStrategy updateRoutingStrategy(StoreDefinition storeDef, Cluster cluster) {
-        if(RoutingStrategyType.CONSISTENT_STRATEGY.equals(storeDef.getRoutingStrategyType())) {
+        if (RoutingStrategyType.CONSISTENT_STRATEGY.equals(storeDef.getRoutingStrategyType())) {
             return new ConsistentRoutingStrategy(cluster.getNodes(),
                                                  storeDef.getReplicationFactor());
         } else if(RoutingStrategyType.TO_ALL_STRATEGY.equals(storeDef.getRoutingStrategyType())) {
@@ -24,6 +25,11 @@ public class RoutingStrategyFactory {
             return new ZoneRoutingStrategy(cluster.getNodes(),
                                            storeDef.getZoneReplicationFactor(),
                                            storeDef.getReplicationFactor());
+        } else if (RoutingStrategyType.MIRRORED_ZONE_STRATEGY.equals(storeDef
+                .getRoutingStrategyType())) {
+            return new MirroredZoneRoutingStrategy(cluster.getNodes(),
+                storeDef.getZoneReplicationFactor(),
+                storeDef.getReplicationFactor());
         } else {
             throw new VoldemortException("RoutingStrategyType:" + storeDef.getRoutingStrategyType()
                                          + " not handled by " + this.getClass());

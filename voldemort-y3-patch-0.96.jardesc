@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="MacRoman" standalone="no"?>
+<jardesc>
+    <jar path="/Users/Francois/Documents/Easy-Concerns/Eclipse Workspace-Juno/voldemort 0.96/bin/voldemort-y3patch-0.96.jar"/>
+    <options buildIfNeeded="true" compress="true" descriptionLocation="/voldemort/voldemort-y3-patch-0.96.jardesc" exportErrors="true" exportWarnings="true" includeDirectoryEntries="false" overwrite="false" saveDescription="true" storeRefactorings="false" useSourceFolders="false"/>
+    <storedRefactorings deprecationInfo="true" structuralOnly="false"/>
+    <selectedProjects/>
+    <manifest generateManifest="true" manifestLocation="" manifestVersion="1.0" reuseManifest="false" saveManifest="false" usesManifest="true">
+        <sealing sealJar="false">
+            <packagesToSeal/>
+            <packagesToUnSeal/>
+        </sealing>
+    </manifest>
+    <selectedElements exportClassFiles="true" exportJavaFiles="false" exportOutputFolder="false">
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.mysql"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.cluster.failuredetector"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.serialization.thrift"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.socket.clientrequest"/>
+        <file path="/voldemort/.gitignore"/>
+        <file path="/voldemort/.project"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.backup"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.serialization.avro"/>
+        <javaElement handleIdentifier="=voldemort/contrib\/collections\/src\/java"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.logging"/>
+        <file path="/voldemort/LICENSE"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.socket"/>
+        <file path="/voldemort/build.xml"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.serialized"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.http.gui.templates"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.socket"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.protocol.vold"/>
+        <file path="/voldemort/README.md"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.protocol.pb"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.annotations.concurrency"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.readonly"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.rebalance"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.stats"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.configuration"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.bdb"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.views"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.scheduler"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.compress"/>
+        <file path="/voldemort/build.properties"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.utils.pool"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.annotations.jmx"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.slop"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.routing"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.client.protocol"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.rebalance.async"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.bdb.stats"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.invalidmetadata"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.protocol.admin"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort"/>
+        <file path="/voldemort/tomcat-tasks.properties"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.annotations"/>
+        <file path="/voldemort/CONTRIBUTORS"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.client.rebalance"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.client.protocol.admin"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.utils"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.cluster"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.http"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.client.protocol.admin.filter"/>
+        <file path="/voldemort/NOTICE"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.xml"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.niosocket"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.readonly.swapper"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.nonblockingstore"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.versioning"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.routed"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.client.rebalance.task"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.memory"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.client.protocol.vold"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.http"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.serialization.json"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.readonly.chunk"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.storage"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.gzip"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.serialization"/>
+        <file path="/voldemort/release_notes.txt"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.client.protocol.pb"/>
+        <file path="/voldemort/web.xml"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.http.gui"/>
+        <file path="/voldemort/.classpath"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.slop.strategy"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.client"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.rebalancing"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.protocol"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.gossip"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.common"/>
+        <file path="/voldemort/NOTES"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.versioned"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.serialization.protobuf"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.routed.action"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.scheduler.slop"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.server.jmx"/>
+        <javaElement handleIdentifier="=voldemort/src\/java&lt;voldemort.store.metadata"/>
+    </selectedElements>
+</jardesc>
